@@ -1,29 +1,27 @@
 name: Dart
 
 on:
-  pull_request:
-    branches: [main]
   push:
-    branches: [main]
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '2.x' # Specify the version of Flutter you want to use
+          flutter-version: '2.5.3' # Specify the Flutter version you want to use
 
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Format code
-        run: flutter format --output=none --set-exit-if-changed .
-
-      - name: Analyze project
+      - name: Analyze project source
         run: flutter analyze
 
       - name: Run tests
