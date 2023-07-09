@@ -40,3 +40,16 @@ jobs:
       # want to change this to 'flutter test'.
       - name: Run tests
         run: dart test
+
+
+- name: Dart Analyzer SARIF
+  # You may pin to the exact commit or the version.
+  # uses: advanced-security/dart-analyzer-sarif@a6363fdc4614c899321a2373d40b9d1f9809793d
+  uses: advanced-security/dart-analyzer-sarif@v1
+  with:
+    # Path to the root of the source code
+    sourceroot: # optional, default is $GITHUB_WORKSPACE
+    # Path to the `dart analyze` text output
+    input: 
+    # Path to the output SARIF file
+    output: # optional
