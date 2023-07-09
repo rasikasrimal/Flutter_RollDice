@@ -26,7 +26,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: DiceRoller(),
+        child: DiceRoller(), //StyledText('Hello World!'),
       ),
     );
   }
