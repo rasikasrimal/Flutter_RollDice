@@ -1,6 +1,5 @@
 # RollDice App 🎲
 
-![App Screenshot](app_screenshot.png)
 
 ## Description
 
@@ -9,10 +8,6 @@ RollDice is a simple mobile application developed using Flutter and Dart. This a
 ## Features
 
 - **Roll Dice:** When the user taps on the dice icon, the app generates a random number between 1 and 6 and displays it on the screen. 🎲🔄
-
-## Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
 
 ## Installation
 
